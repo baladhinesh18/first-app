@@ -59,7 +59,6 @@ function Starting({ nme, ur,rat,des }) {
       <h1> {nme}</h1>
       <h2>IMDB:{rat}/10</h2>
       <h3>description:<a href={des}>{des}</a></h3>
-      <br></br>
       </div>
     </div>
     </div>

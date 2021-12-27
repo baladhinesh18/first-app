@@ -54,12 +54,11 @@ function Starting({ nme, ur,rat,des }) {
   return (
     <div>
     <div className="ro">
-     <img src={ur} className="mg" alt={nme} />
+     <img src={ur} className="mg" alt="avatar" />
       <div className="col">
       <h1> {nme}</h1>
       <h2>IMDB:{rat}/10</h2>
       <h3>description:<a href={des}>{des}</a></h3>
-      <br></br>
       </div>
     </div>
     </div>

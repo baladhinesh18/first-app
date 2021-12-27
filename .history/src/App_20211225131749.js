@@ -40,10 +40,8 @@ function App() {
   ];
   return (
     <div className="App">
-    <h1 className="lor">Movie List</h1>
       {users.map(({ name, url ,rating,summary}) => (
-        <Starting nme={name} ur={url} rat={rating} des={summary} >
-        </Starting>
+        <Starting nme={name} ur={url} rat={rating} des={summary} />
       ))}
     </div>
   );
@@ -53,13 +51,13 @@ function Starting({ nme, ur,rat,des }) {
 
   return (
     <div>
+    <h1>Movie List</h1>
     <div className="ro">
-     <img src={ur} className="mg" alt={nme} />
+     <img src={ur} className="mg" alt="avatar" />
       <div className="col">
       <h1> {nme}</h1>
       <h2>IMDB:{rat}/10</h2>
       <h3>description:<a href={des}>{des}</a></h3>
-      <br></br>
       </div>
     </div>
     </div>

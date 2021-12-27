@@ -6,22 +6,17 @@
   height: 200px;
   width: 150px;
   object-fit: center;
+  /* border-radius: 50%; */
 }
 .ro{
 display: flex;
 flex-direction: row;
-margin-left: 20px;
-margin-bottom: 20px;
+justify-content: space-evenly;
+align-items: center;
 }
 .col{
   display:flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
-margin-left: 20px;
-}
-.lor{
-color:orange;
-}
-h1{
-  margin-top: 0px;
 }
