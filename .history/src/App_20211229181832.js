@@ -50,16 +50,18 @@ function App() {
 }
 
 function Starting({ nme, ur,rat,des }) {
-const styles={color: rat>=8.5? "green":"red"};
-
-
+const styles={color:  "green"};
+const styles1={color:  "red"};
+let rat1=()=>{
+  if(rat > 8.5)?"{styles.rat}":"{styles1.rat}
+}
   return (
     <div>
     <div className="ro">
      <img src={ur} className="mg" alt={nme} />
       <div className="col">
       <h1> {nme}</h1>
-      <h2 style={styles}>IMDB:{rat}/10</h2>
+      <h2>IMDB:(rat1())"/10</h2>
       <h3>description:<a href={des}>{des}</a></h3>
       </div>
     </div>

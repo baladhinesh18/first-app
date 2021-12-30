@@ -51,7 +51,9 @@ function App() {
 
 function Starting({ nme, ur,rat,des }) {
 const styles={color: rat>=8.5? "green":"red"};
-
+// const styles1={color:  "red"};
+// let rat1=(rat)=>
+//   if(rat >= 8.5)? "{styles.rat}":"{styles1.rat}"
 
   return (
     <div>
