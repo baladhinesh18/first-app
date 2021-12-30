@@ -47,7 +47,7 @@ function App() {
         <Starting nme={name} ur={url} rat={rating} des={summary} >
         </Starting>
       ))}
-      {/* <Counter/> */}
+      <Counter/>
     </div>
   );
 }
@@ -56,8 +56,8 @@ const [like,setLike]=useState(0);
 const[dislike,setDislike]=useState(0);
 return(
   <div>
-  <button onClick={()=>setLike(like+1)}>👍{like}</button>
-  <button onClick={()=>setDislike(dislike+1)}>👎{dislike}</button>
+  <button onClick={()=>setLike(like+1)}>=👍{like}</button>
+  <button onClick={()=>setDislike(dislike+1)}>=👎{dislike}</button>
   {/* <h1>{like}</h1> */}
   </div>
 )}
@@ -73,7 +73,7 @@ const styles={color: rat>=8.5? "green":"red"};
       <h1> {nme}</h1>
       <h2 style={styles}>IMDB:{rat}/10</h2>
       <h3>description:<a href={des}>{des}</a></h3>
-    <Counter/>
+    
       </div>
     </div>
     </div>

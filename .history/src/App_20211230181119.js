@@ -47,7 +47,7 @@ function App() {
         <Starting nme={name} ur={url} rat={rating} des={summary} >
         </Starting>
       ))}
-      {/* <Counter/> */}
+      <Counter/>
     </div>
   );
 }
@@ -73,7 +73,7 @@ const styles={color: rat>=8.5? "green":"red"};
       <h1> {nme}</h1>
       <h2 style={styles}>IMDB:{rat}/10</h2>
       <h3>description:<a href={des}>{des}</a></h3>
-    <Counter/>
+    
       </div>
     </div>
     </div>
