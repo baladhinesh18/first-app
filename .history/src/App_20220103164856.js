@@ -74,7 +74,7 @@ const[isHide,setIsHide]=useState(true);
       <h1> {nme}</h1>
       <h2 style={styles}>IMDB:{rat}/10</h2>
       {
-           isHide?<h3>description:<a href={des}>{des}</a></h3>:null
+           isHide?<h3>{des}</h3>:null
             }
       {/* <h3>description:<a href={des}>{des}</a></h3> */}
     <button onClick={()=>setIsHide(!isHide)}>Toggle : Hide summary</button>

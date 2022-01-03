@@ -51,6 +51,8 @@ function App() {
     </div>
   );
 }
+const [isVisible, setIsVisible] = useState(false);
+const toggleVisibility = () => setIsVisible(!isVisible);
 function Counter(){
 const [like,setLike]=useState(0);
 const[dislike,setDislike]=useState(0);
@@ -59,12 +61,16 @@ return(
   <button onClick={()=>setLike(like+1)}>👍{like}</button>
   <button onClick={()=>setDislike(dislike+1)}>👎{dislike}</button>
   {/* <h1>{like}</h1> */}
+  <Starting isVisible={isVisible} toggleVisibility={toggleVisibility} />
+      {isVisible && <h4 "12234"/>}
   </div>
 )}
+let toogle=()=>{
 
+}
 function Starting({ nme, ur,rat,des }) {
 const styles={color: rat>=8.5? "green":"red"};
-const[isHide,setIsHide]=useState(true);
+
 
   return (
     <div>
@@ -73,11 +79,8 @@ const[isHide,setIsHide]=useState(true);
       <div className="col">
       <h1> {nme}</h1>
       <h2 style={styles}>IMDB:{rat}/10</h2>
-      {
-           isHide?<h3>description:<a href={des}>{des}</a></h3>:null
-            }
-      {/* <h3>description:<a href={des}>{des}</a></h3> */}
-    <button onClick={()=>setIsHide(!isHide)}>Toggle : Hide summary</button>
+      <h3>description:<a href={des}>{des}</a></h3>
+    <button onClick={toogle()}>Toggle summary</button>
     <Counter/>
       </div>
     </div>

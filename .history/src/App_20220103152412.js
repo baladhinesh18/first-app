@@ -61,10 +61,9 @@ return(
   {/* <h1>{like}</h1> */}
   </div>
 )}
-
 function Starting({ nme, ur,rat,des }) {
 const styles={color: rat>=8.5? "green":"red"};
-const[isHide,setIsHide]=useState(true);
+
 
   return (
     <div>
@@ -73,12 +72,9 @@ const[isHide,setIsHide]=useState(true);
       <div className="col">
       <h1> {nme}</h1>
       <h2 style={styles}>IMDB:{rat}/10</h2>
-      {
-           isHide?<h3>description:<a href={des}>{des}</a></h3>:null
-            }
-      {/* <h3>description:<a href={des}>{des}</a></h3> */}
-    <button onClick={()=>setIsHide(!isHide)}>Toggle : Hide summary</button>
+      <h3>description:<a href={des}>{des}</a></h3>
     <Counter/>
+    <button>Toggle summary</button>
       </div>
     </div>
     </div>

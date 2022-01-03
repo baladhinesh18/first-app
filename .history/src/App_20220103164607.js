@@ -51,6 +51,7 @@ function App() {
     </div>
   );
 }
+const [toggleSummary,setToggleSummary]=useState();
 function Counter(){
 const [like,setLike]=useState(0);
 const[dislike,setDislike]=useState(0);
@@ -61,10 +62,12 @@ return(
   {/* <h1>{like}</h1> */}
   </div>
 )}
+let toogle=()=>{
 
+}
 function Starting({ nme, ur,rat,des }) {
 const styles={color: rat>=8.5? "green":"red"};
-const[isHide,setIsHide]=useState(true);
+const[isHide,setIsHide]=useState(false);
 
   return (
     <div>
@@ -74,10 +77,11 @@ const[isHide,setIsHide]=useState(true);
       <h1> {nme}</h1>
       <h2 style={styles}>IMDB:{rat}/10</h2>
       {
-           isHide?<h3>description:<a href={des}>{des}</a></h3>:null
+           isHide?<h3>{des}</h3>:null
             }
       {/* <h3>description:<a href={des}>{des}</a></h3> */}
-    <button onClick={()=>setIsHide(!isHide)}>Toggle : Hide summary</button>
+    <button onClick={()=>setShow(!show)}>Toggle summary</button>
+    {/* <button onClick={()=>setShow(!show)}>Toggle</button> */}
     <Counter/>
       </div>
     </div>
