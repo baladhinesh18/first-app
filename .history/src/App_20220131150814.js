@@ -9,7 +9,7 @@ import { Counter } from './Counter';
 
 export function Starting({ nme, ur,rat,des }) {
 const styles={color: rat>=8.5? "green":"red"};
-const[isHide,setIsHide]=useState(false);
+const[isHide,setIsHide]=useState(true);
 
   return (
     <div>

@@ -4,12 +4,12 @@ import {useState} from "react";
 import IconButton from '@mui/material/IconButton';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { App } from './App.1';
+import { Apple } from './App.1';
 import { Counter } from './Counter';
 
 export function Starting({ nme, ur,rat,des }) {
 const styles={color: rat>=8.5? "green":"red"};
-const[isHide,setIsHide]=useState(false);
+const[isHide,setIsHide]=useState(true);
 
   return (
     <div>

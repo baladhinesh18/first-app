@@ -21,7 +21,6 @@ margin-left: 20px;
 }
 .lor{
 color:orange;
-margin-top: 1rem;
 }
 h1,h2,h3{
   margin-top: 0px;
@@ -34,12 +33,3 @@ button{
 margin-top: 1rem;
 margin-right: 1rem;
 }
-.btn{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- }
- .bncs{
-   margin-top:5rem;
- }

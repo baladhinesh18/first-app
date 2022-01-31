@@ -2,14 +2,29 @@
 import './App.css';
 import {useState} from "react";
 import IconButton from '@mui/material/IconButton';
+import Badge from '@mui/material/Badge';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { App } from './App.1';
-import { Counter } from './Counter';
+function Counter(){
+const [like,setLike]=useState(0);
+const[dislike,setDislike]=useState(0);
+// const marr={margin:'0 1rem 0 0 ',}
+return(
+  <div className="vacls">
+  <IconButton onClick={()=>setLike(like+1)} color="primary"   > <Badge badgeContent={like} color="primary">
+  👍
+    </Badge></IconButton>
+  <IconButton onClick={()=>setDislike(dislike+1)}   color="error"><Badge badgeContent={dislike} color="error">
+  👎
+    </Badge></IconButton>
+  {/* <h1>{like}</h1> */}
+  </div>
+)}
 
 export function Starting({ nme, ur,rat,des }) {
 const styles={color: rat>=8.5? "green":"red"};
-const[isHide,setIsHide]=useState(false);
+const[isHide,setIsHide]=useState(true);
 
   return (
     <div>
