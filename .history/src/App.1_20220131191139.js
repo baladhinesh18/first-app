@@ -88,7 +88,7 @@ export function App() {
 
         </div>
        </Route>
-       <Route path="/AddColor">
+       <Route path="/Color-game">
        <AddColor/>
        </Route>
        </Switch>

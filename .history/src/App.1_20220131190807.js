@@ -6,7 +6,7 @@ import {
     Switch, Route
   } from "react-router-dom";
   import { AddColor } from './AddColor';
-
+ import { Counter } from './Counter'; 
 
 // const[add,setAdd] =useState([]);
 export function App() {
@@ -78,7 +78,7 @@ export function App() {
         <TextField id="outlined-basic" label="Enter a Movie rating" variant="outlined" style={mart} value={rating} onChange={(event) => setRating(event.target.value)} />
         <TextField id="outlined-basic" label="Enter a Movie summary" variant="outlined" style={mart} value={summary} onChange={(event) => setSummary(event.target.value)} />
         <Button variant="contained" style={mart} onClick={() => setAdd([...add, x])}>Add Movie</Button>
-        
+        {/* <Counter/> */}
       </div>
       <h1 className="lor">Movie List</h1>
       {add.map(({ name, url, rating, summary }) => (
@@ -88,7 +88,7 @@ export function App() {
 
         </div>
        </Route>
-       <Route path="/AddColor">
+       <Route path="/Color-game">
        <AddColor/>
        </Route>
        </Switch>

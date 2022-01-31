@@ -10,7 +10,7 @@ import { App } from './App.1';
 // import {
 //   Switch, Route
 // } from "react-router-dom";
-import { Counter } from './Counter'; 
+
 
 export function Starting({ nme, ur,rat,des }) {
 const styles={color: rat>=8.5? "green":"red"};
@@ -30,7 +30,7 @@ const[isHide,setIsHide]=useState(false);
       <div>
     <IconButton onClick={()=>setIsHide(!isHide)} color="primary"> {isHide ? <ExpandLessIcon/> : <ExpandMoreIcon/>}</IconButton>
     </div>
-    <Counter/>
+   
       </div>
     </div>
     </div>

@@ -2,10 +2,6 @@ import { useState } from "react";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { Starting } from './App';
-import {
-    Switch, Route
-  } from "react-router-dom";
-  import { AddColor } from './AddColor';
 
 
 // const[add,setAdd] =useState([]);
@@ -52,25 +48,7 @@ export function App() {
   console.log(add);
   const x = { name, url, rating, summary };
   return (
-      <div>
-    <ul>
-    <li>
-      <a href="/Home">Home</a>
-    </li>
-    <li>
-      <a href="/Counter">Movie List</a>
-    </li>
-    <li>
-      <a href="/AddColor">Color-game</a>
-    </li>
-    </ul>
-    
-        <Switch>
-    <Route path="/Home">
-       welcome to movie app✨🎉🎉
-       </Route>
-       <Route path="/Counter">
-       <div className="App">
+    <div className="App">
       <h1 className="lor">Add New Movie</h1>
       <div className="btn">
         <TextField id="outlined-basic" label="Enter a Movie Name" variant="outlined" value={name} onChange={(event) => setName(event.target.value)} />
@@ -78,7 +56,7 @@ export function App() {
         <TextField id="outlined-basic" label="Enter a Movie rating" variant="outlined" style={mart} value={rating} onChange={(event) => setRating(event.target.value)} />
         <TextField id="outlined-basic" label="Enter a Movie summary" variant="outlined" style={mart} value={summary} onChange={(event) => setSummary(event.target.value)} />
         <Button variant="contained" style={mart} onClick={() => setAdd([...add, x])}>Add Movie</Button>
-        
+        {/* <Counter/> */}
       </div>
       <h1 className="lor">Movie List</h1>
       {add.map(({ name, url, rating, summary }) => (
@@ -86,12 +64,7 @@ export function App() {
         </Starting>
       ))}
 
-        </div>
-       </Route>
-       <Route path="/AddColor">
-       <AddColor/>
-       </Route>
-       </Switch>
+
     </div>
   );
 }

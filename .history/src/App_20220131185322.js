@@ -6,11 +6,11 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 // import AddColor from './AddColor.js';
 import { App } from './App.1';
-
-// import {
-//   Switch, Route
-// } from "react-router-dom";
 import { Counter } from './Counter'; 
+import {
+  BrowserRouter as Router,Switch, Route
+} from "react-router-dom";
+import { AddColor } from './AddColor';
 
 export function Starting({ nme, ur,rat,des }) {
 const styles={color: rat>=8.5? "green":"red"};
@@ -19,7 +19,6 @@ const[isHide,setIsHide]=useState(false);
   return (
     
     <div>
-     
     <div className="ro">
      <img src={ur} className="mg" alt={nme} />
       <div className="col">
@@ -30,7 +29,17 @@ const[isHide,setIsHide]=useState(false);
       <div>
     <IconButton onClick={()=>setIsHide(!isHide)} color="primary"> {isHide ? <ExpandLessIcon/> : <ExpandMoreIcon/>}</IconButton>
     </div>
-    <Counter/>
+    <Switch>
+    <Route path="/Home">
+       welcome to movie app✨🎉🎉
+       </Route>
+       <Route path="/Counter">
+       <Counter/>
+       </Route>
+       <Route path="/AddColor">
+       <AddColor/>
+       </Route>
+       </Switch>
       </div>
     </div>
     </div>
