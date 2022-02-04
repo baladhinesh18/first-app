@@ -45,20 +45,5 @@ margin-right: 1rem;
  }
  .cent{
    margin-top: 0;
-   margin-left:25rem;
- }
-  .img1{
-height:25rem;
- }
- .flexy{
-   display: flex;
-   justify-content: flex-start;
- }
- .imb{
-   margin-left: 35rem;
- }
- iframe{
-padding: 3rem;
-max-width: 100%;
-max-height: 100%;
+   margin-left:15rem;
  }

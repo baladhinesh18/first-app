@@ -18,7 +18,7 @@ export function Starting({ nme, ur,rat,des,del,id}) {
 const styles={color: rat>=8.5? "green":"red"};
 const[isHide,setIsHide]=useState(false);
 const history=useHistory()
-console.log(id)
+
   return (
     
     <div>

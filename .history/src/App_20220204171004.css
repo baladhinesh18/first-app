@@ -54,11 +54,7 @@ height:25rem;
    display: flex;
    justify-content: flex-start;
  }
- .imb{
-   margin-left: 35rem;
- }
  iframe{
-padding: 3rem;
-max-width: 100%;
-max-height: 100%;
+ text-align: center;
+   overflow: hidden;
  }

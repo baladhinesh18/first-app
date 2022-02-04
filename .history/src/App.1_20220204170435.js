@@ -63,7 +63,7 @@ export function App() {
       <Link to="/">Home</Link>
     </li>
     <li>
-      <Link to="/Movies">Movie List</Link>
+      <Link to="/Counter">Movie List</Link>
     </li>
     <li>
       <Link to="/AddMovie">AddMovie</Link>
@@ -81,7 +81,7 @@ export function App() {
       <AddMovie movieList={add} setmovieList={setAdd}/>
       </Route>
 
-       <Route exact path="/Movies">
+       <Route exact path="/Counter">
       
        <div className="App">
       <h1 className="lor">Movie List</h1>

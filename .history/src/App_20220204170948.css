@@ -52,13 +52,9 @@ height:25rem;
  }
  .flexy{
    display: flex;
-   justify-content: flex-start;
- }
- .imb{
-   margin-left: 35rem;
+   justify-content: space-around;
  }
  iframe{
-padding: 3rem;
-max-width: 100%;
-max-height: 100%;
+ text-align: center;
+   overflow: hidden;
  }

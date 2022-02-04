@@ -50,8 +50,8 @@ export function App() {
       url: "https://static.moviecrow.com/gallery/20210414/185058-Ey6W3Z2VoAMu4P2%20(1).jpg",
       rating: "9.1",
       summary: "https://en.wikipedia.org/wiki/Writer_(film)",
-      descri:"Writer is a 2021 Indian Tamil-language crime thriller film written and directed by debutant Franklin Jacob and produced by Neelam Productions in association with Golden Ratio Films, Little Red Car Films and Jetty Productions.",
-      trailer:"https://www.youtube.com/embed/n0tEAKyFXFM"
+      des:"Spider-Man: No Way Home is a 2021 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios and distributed by Sony Pictures Releasing. It is the sequel to Spider-Man: Homecoming (2017) and Spider-Man: Far From Home (2019), and the 27th film in the Marvel Cinematic Universe (MCU).",
+      trailer:"https://www.youtube.com/embed/wuyixh4SsAY"
     }
   ];
   const [add, setAdd] = useState(users);
@@ -63,7 +63,7 @@ export function App() {
       <Link to="/">Home</Link>
     </li>
     <li>
-      <Link to="/Movies">Movie List</Link>
+      <Link to="/Counter">Movie List</Link>
     </li>
     <li>
       <Link to="/AddMovie">AddMovie</Link>
@@ -81,7 +81,7 @@ export function App() {
       <AddMovie movieList={add} setmovieList={setAdd}/>
       </Route>
 
-       <Route exact path="/Movies">
+       <Route exact path="/Counter">
       
        <div className="App">
       <h1 className="lor">Movie List</h1>
